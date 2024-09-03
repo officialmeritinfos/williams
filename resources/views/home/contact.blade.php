@@ -1,32 +1,35 @@
 @extends('home.base')
 @section('content')
-    <!-- Start Page-title Area -->
-    <section class="page-header">
-        <div class="page-header__bg" style="background-image: url({{asset('home/images/backgrounds/page-header-bg.jpg')}}');">
-        </div>
-        <div class="page-header__shape-2 float-bob-x">
-            <img src="{{asset('home/images/shapes/page-header-shape-2.png')}}" alt="">
-        </div>
-        <div class="page-header__shape-1 float-bob-y">
-            <img src="{{asset('home/images/shapes/page-header-shape-1.png')}}" alt="">
-        </div>
-        <div class="page-header__shape-3 float-bob-x">
-            <img src="{{asset('home/images/shapes/page-header-shape-3.png')}}" alt="">
-        </div>
+    <!-- page-banner start -->
+    <section class="page-banner pt-xs-60 pt-sm-80 overflow-hidden">
         <div class="container">
-            <div class="page-header__inner">
-                <h2>{{$pageName}}</h2>
-                <div class="thm-breadcrumb__inner">
-                    <ul class="thm-breadcrumb list-unstyled">
-                        <li><a href="{{url('/')}}">Home</a></li>
-                        <li><span>/</span></li>
-                        <li>{{$pageName}}</li>
-                    </ul>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="page-banner__content mb-xs-10 mb-sm-15 mb-md-15 mb-20">
+                        <div class="transparent-text">{{$pageName}}</div>
+                        <div class="page-title">
+                            <h1>{{$pageName}}</h1>
+                        </div>
+                    </div>
+
+                    <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="{{url('/')}}">Home</a></li>
+                            <li class="breadcrumb-item active" aria-current="page">{{$pageName}}</li>
+                        </ol>
+                    </nav>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="page-banner__media mt-xs-30 mt-sm-40">
+                        <img src="{{asset('home/img/page-banner/page-banner-start.svg')}}" class="img-fluid start" alt="">
+                        <img src="{{asset('home/img/page-banner/page-banner.jpg')}}" class="img-fluid" alt="">
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- End Page-title Area -->
+    <!-- page-banner end -->
 
     <!--Contact Page Start-->
     <section class="contact-page">
