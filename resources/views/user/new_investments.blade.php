@@ -56,7 +56,7 @@
                             <label for="inputAddress2">Account</label>
                             <select type="number" class="form-control form-control-lg" id="inputAddress2"
                                     name="account">
-                                <option value="">Select a Account</option>
+                                <option value="">Select an Account</option>
                                 <option value="1">New Deposit</option>
                                 @if($user->canCompound==1)
                                     <option value="2">Reinvest from Account Balance</option>
