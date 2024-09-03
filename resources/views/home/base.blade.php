@@ -306,11 +306,11 @@
 
 @yield('content')
 
-<div class="telegram-float-widget">
+<!--<div class="telegram-float-widget">
     <a href="https://wa.me/{{$web->phone}}" target="_blank">
         <img src="https://cdn2.iconfinder.com/data/icons/social-media-applications/64/social_media_applications_23-whatsapp-256.png" alt="" width="50">
     </a>
-</div>
+</div>-->
 <!-- footer start -->
 <footer class="footer-1 footer-2 overflow-hidden" style="background-image: url({{asset('home/img/footer/footer-bg-2.png')}});">
 
