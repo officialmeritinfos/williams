@@ -248,7 +248,9 @@
                             <div id="collapse-2-10" class="collapse" aria-labelledby="heading-2-10"
                                  data-parent="#accordion-2">
                                 <div class="card-body">
-                                    <p>You can make as many deposit as you want on any of our investment plans except theHERCULES ARBITRAGE PLAN where you can only invest two times. And you can only withdraw once in the HERCULES ARBITRAGE PLAN.</p>
+                                    <p>You can make as many deposit as you want on any of our investment plans except
+                                        the Starter Package where you can only invest two times.
+                                        And you can only withdraw once in the Starter Package.</p>
                                 </div>
                             </div>
                         </div>
