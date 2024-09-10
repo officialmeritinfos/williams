@@ -29,7 +29,7 @@ class Investments extends Controller
             'web'=>$web,
             'user'=>$user,
             'investments'=>Investment::where('user',$user->id)->paginate(15),
-            'pageName'=>'Deposit Lists',
+            'pageName'=>'Investment History',
             'siteName'=>$web->name
         ];
 
@@ -44,7 +44,7 @@ class Investments extends Controller
         $dataView = [
             'web'=>$web,
             'user'=>$user,
-            'pageName'=>'New Deposit',
+            'pageName'=>'New Investment',
             'siteName'=>$web->name,
             'packages'=>Package::where('status',1)->get(),
             'coins'=>Coin::where('status',1)->get(),
@@ -103,7 +103,7 @@ class Investments extends Controller
                 $balance = $user->balance;
                 $source = 'balance';
                 $newBalance = [
-                    'balance'=>$balance
+                    'balance'=>$balance - $input['amount']
                 ];
                 $status=2;
                 break;
@@ -117,8 +117,8 @@ class Investments extends Controller
                 break;
         }
 
-        if ($input['account']!=1 && $balance < $input['amount'] ){
-            return back()->with('error','Insufficient balance in profit account.');
+        if ( $balance < $input['amount'] ){
+            return back()->with('error','Insufficient balance in selected account.');
         }
 
 
@@ -181,7 +181,7 @@ class Investments extends Controller
         $dataView = [
             'user'=>$user,
             'web'=>$web,
-            'pageName'=>'Deposit Detail',
+            'pageName'=>'Investment Detail',
             'siteName'=>$web->name,
             'investment'=>$investment,
         ];

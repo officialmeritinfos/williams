@@ -73,26 +73,26 @@
                     <span class="menu-title">Dashboard</span>
                 </a>
             </li>
-{{--            <li>--}}
-{{--                <a href="#" class="has-arrow box-style">--}}
-{{--                    <i class="ri-money-dollar-box-line"></i>--}}
-{{--                    <span class="menu-title">Deposit</span>--}}
-{{--                </a>--}}
+            <li>
+                <a href="#" class="has-arrow box-style">
+                    <i class="ri-money-dollar-box-line"></i>
+                    <span class="menu-title">Deposit</span>
+                </a>
 
-{{--                <ul class="sidemenu-nav-second-level">--}}
-{{--                    <li>--}}
-{{--                        <a href="{{url('account/new_deposit')}}" >--}}
-{{--                            <span class="menu-title">New Deposit</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
+                <ul class="sidemenu-nav-second-level">
+                    <li>
+                        <a href="{{url('account/new_deposit')}}" >
+                            <span class="menu-title">New Deposit</span>
+                        </a>
+                    </li>
 
-{{--                    <li>--}}
-{{--                        <a href="{{url('account/deposits')}}">--}}
-{{--                            <span class="menu-title">Deposit List</span>--}}
-{{--                        </a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </li>--}}
+                    <li>
+                        <a href="{{url('account/deposits')}}">
+                            <span class="menu-title">Deposit History</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
             <li>
                 <a href="#" class="has-arrow box-style">
                     <i class="ri-building-line"></i>
@@ -102,13 +102,13 @@
                 <ul class="sidemenu-nav-second-level">
                     <li>
                         <a href="{{url('account/new_investment')}}">
-                            <span class="menu-title">Deposit</span>
+                            <span class="menu-title">New Investment</span>
                         </a>
                     </li>
 
                     <li>
                         <a href="{{url('account/investments')}}">
-                            <span class="menu-title">Deposit History</span>
+                            <span class="menu-title">Investment History</span>
                         </a>
                     </li>
                 </ul>
@@ -354,17 +354,6 @@
     new ClipboardJS('.copy');
 </script>
 @stack('js')
-<!-- Smartsupp Live Chat script -->
-<script type="text/javascript">
-    var _smartsupp = _smartsupp || {};
-    _smartsupp.key = '005cf642bad761b38382c7667b5a778f40c7ef00';
-    window.smartsupp||(function(d) {
-        var s,c,o=smartsupp=function(){ o._.push(arguments)};o._=[];
-        s=d.getElementsByTagName('script')[0];c=d.createElement('script');
-        c.type='text/javascript';c.charset='utf-8';c.async=true;
-        c.src='https://www.smartsuppchat.com/loader.js?';s.parentNode.insertBefore(c,s);
-    })(document);
-</script>
-<noscript> Powered by <a href=“https://www.smartsupp.com” target=“_blank”>Smartsupp</a></noscript>
+
 </body>
 </html>
