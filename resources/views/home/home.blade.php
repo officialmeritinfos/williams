@@ -791,7 +791,7 @@
             <div class="row align-items-center">
                 <div class="col-12">
                     <div class="blog-news__content text-center">
-                        <span class="sub-title fw-500  text-uppercase mb-sm-10 mb-xs-5 mb-15 d-block color-yellow"><img src="https://libertymultipleasset.com/home/img/team-details/badge-line-yellow.svg" class="img-fluid mr-10" alt=""> Blog & News</span>
+                        <span class="sub-title fw-500  text-uppercase mb-sm-10 mb-xs-5 mb-15 d-block color-yellow"><img src="{{asset('home/img/team-details/badge-line-yellow.svg')}}" class="img-fluid mr-10" alt=""> Blog & News</span>
                         <h2 class="title color-d_black">{{$siteName}} Latest Blog & News</h2>
                     </div>
                 </div>
