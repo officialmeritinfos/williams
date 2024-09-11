@@ -726,64 +726,64 @@
 
 
     <!-- Start Blog Area -->
-    <div class="blog-area pt-100 pb-70" style="margin-bottom: 5rem;">
-        <div class="container">
-            <div class="section-title">
-                <span class="sub-title">Latest Transactions</span>
-                <h2>Most Recent Transactions</h2>
-            </div>
+{{--    <div class="blog-area pt-100 pb-70" style="margin-bottom: 5rem;">--}}
+{{--        <div class="container">--}}
+{{--            <div class="section-title">--}}
+{{--                <span class="sub-title">Latest Transactions</span>--}}
+{{--                <h2>Most Recent Transactions</h2>--}}
+{{--            </div>--}}
 
-            <div class="row">
+{{--            <div class="row">--}}
 
-                <div class="col-md-6">
-                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Recent Deposits</div>
-                    <table class="table align-middle mb-0 bg-white">
-                        <thead class="bg-light">
-                        <tr>
-                            <th>Name</th>
-                            <th>Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($deposits as $deposit)
-                            @inject('option','App\Defaults\Custom')
-                            <tr>
-                                <td>{{$option->getInvestor($deposit->user)}}</td>
-                                <td>${{number_format($deposit->amount,2)}}</td>
-                            </tr>
-                        @endforeach
+{{--                <div class="col-md-6">--}}
+{{--                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Recent Deposits</div>--}}
+{{--                    <table class="table align-middle mb-0 bg-white">--}}
+{{--                        <thead class="bg-light">--}}
+{{--                        <tr>--}}
+{{--                            <th>Name</th>--}}
+{{--                            <th>Amount</th>--}}
+{{--                        </tr>--}}
+{{--                        </thead>--}}
+{{--                        <tbody>--}}
+{{--                        @foreach($deposits as $deposit)--}}
+{{--                            @inject('option','App\Defaults\Custom')--}}
+{{--                            <tr>--}}
+{{--                                <td>{{$option->getInvestor($deposit->user)}}</td>--}}
+{{--                                <td>${{number_format($deposit->amount,2)}}</td>--}}
+{{--                            </tr>--}}
+{{--                        @endforeach--}}
 
-                        </tbody>
-                    </table>
+{{--                        </tbody>--}}
+{{--                    </table>--}}
 
-                </div>
+{{--                </div>--}}
 
-                <div class="col-md-6">
-                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Latest Withdrawals</div>
-                    <table class="table align-middle mb-0 bg-white">
-                        <thead class="bg-light">
-                        <tr>
-                            <th>Name</th>
-                            <th>Amount</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        @foreach($withdrawals as $withdrawal)
-                            @inject('option','App\Defaults\Custom')
-                            <tr>
-                                <td>{{$option->getInvestor($withdrawal->user)}}</td>
-                                <td>${{number_format($withdrawal->amount,2)}}</td>
-                            </tr>
-                        @endforeach
-                        </tbody>
-                    </table>
+{{--                <div class="col-md-6">--}}
+{{--                    <div class="sec-title_title" style="margin-bottom: 3rem;margin-top: 3rem;">Latest Withdrawals</div>--}}
+{{--                    <table class="table align-middle mb-0 bg-white">--}}
+{{--                        <thead class="bg-light">--}}
+{{--                        <tr>--}}
+{{--                            <th>Name</th>--}}
+{{--                            <th>Amount</th>--}}
+{{--                        </tr>--}}
+{{--                        </thead>--}}
+{{--                        <tbody>--}}
+{{--                        @foreach($withdrawals as $withdrawal)--}}
+{{--                            @inject('option','App\Defaults\Custom')--}}
+{{--                            <tr>--}}
+{{--                                <td>{{$option->getInvestor($withdrawal->user)}}</td>--}}
+{{--                                <td>${{number_format($withdrawal->amount,2)}}</td>--}}
+{{--                            </tr>--}}
+{{--                        @endforeach--}}
+{{--                        </tbody>--}}
+{{--                    </table>--}}
 
-                </div>
+{{--                </div>--}}
 
-            </div>
-        </div>
-        <!-- End News One -->
-    </div>
+{{--            </div>--}}
+{{--        </div>--}}
+{{--        <!-- End News One -->--}}
+{{--    </div>--}}
 
     <!-- blog-news start -->
     <section class="blog-news pb-xs-80 pt-xs-80 pt-sm-100 pb-sm-100 pt-md-100 pb-md-100 pt-120 pb-120 overflow-hidden" style="background-image: url({{asset('home/img/home-3/blog-new-bg.png')}});">
@@ -792,7 +792,7 @@
                 <div class="col-12">
                     <div class="blog-news__content text-center">
                         <span class="sub-title fw-500  text-uppercase mb-sm-10 mb-xs-5 mb-15 d-block color-yellow"><img src="https://libertymultipleasset.com/home/img/team-details/badge-line-yellow.svg" class="img-fluid mr-10" alt=""> Blog & News</span>
-                        <h2 class="title color-d_black">Liberty Multiple Asset Latest Blog & News</h2>
+                        <h2 class="title color-d_black">{{$siteName}} Latest Blog & News</h2>
                     </div>
                 </div>
             </div>
